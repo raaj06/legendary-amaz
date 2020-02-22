@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="B01J62Q6TG" parallel="tests" thread-count="1">
+<listeners>
+       <listener class-name = "com.amazon.report.CustomReporter" />
+       </listeners>
+	<test verbose="10" name="MTGO" preserve-order="true"
+	annotations="JDK">
+		<parameter name="appName" value="mtgo" />
+		<parameter name="searchText" value="Cars" />
+		<parameter name="ASIN" value="B072PTFQPX" />
+		<groups>
+			<run>
+				<include name="ille" /> <!-- Note: Choose 'sanity' to perform full script execution or 'ille' to 
+					perform ILLE tests only -->
+			</run>
+		</groups>
+		<classes>
+			<class name="us.VTests"/>
+			
+		</classes>
+	</test>
+	
+	<test verbose="10" name="ScienceChannelGo" preserve-order="true"
+	annotations="JDK">
+		<parameter name="appName" value="sciencechannelgo" />
+		<parameter name="searchText" value="INVISIBLE KILLERS"/>
+		<parameter name="ASIN" value="B06XJHP526" />
+		<groups>
+			<run>
+				<include name="ille" /> <!-- Note: Choose 'sanity' to perform full script execution or 'ille' to 
+					perform ILLE tests only -->
+			</run>
+		</groups>
+		<classes>
+						<class name="us.VTests"/>
+			
+		</classes>
+	</test>
+</suite>
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [GulfPort]" parallel="tests">
+  <listeners>
+    <listener class-name="com.amazon.report.CustomReporter"/>
+  </listeners>
+  <test thread-count="1" name="GulfPort(failed)" parallel="tests">
+    <parameter name="searchText" value="Football"/>
+    <parameter name="appName" value="gulfport"/>
+    <parameter name="ASIN" value="B07JNNJVWJ"/>
+    <groups>
+      <run>
+        <include name="ille"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="us.GulfPortTests">
+        <methods>
+          <include name="testSetUp"/>
+          <include name="precondition"/>
+          <include name="featuredVideoSection" invocation-numbers="0 0 0 0"/>
+        </methods>
+      </class> <!-- us.GulfPortTests -->
+    </classes>
+  </test> <!-- GulfPort(failed) -->
+</suite> <!-- Failed suite [GulfPort] -->

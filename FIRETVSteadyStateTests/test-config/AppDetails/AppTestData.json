@@ -1,0 +1,32 @@
+{
+	
+"fnn": {
+		"appPackage": "com.amazon.rialto.webapp.A032439de0587108d1e1067a9483a7bd7e91e2dd1",
+		"appActivity": "com.amazon.rialto.webapp.A032439de0587108d1e1067a9483a7bd7e91e2dd1.MainActivity",
+		"navigationTabCount": "5",
+		"weblink": "https://www.sciencechannel.com/activate"
+	},
+	
+	"obtv": {
+		"appPackage": "com.amazon.rialto.webapp.Abd576b42154da4ae9045a868f5e6ee233c1330b2",
+		"appActivity": "com.amazon.rialto.webapp.Abd576b42154da4ae9045a868f5e6ee233c1330b2.MainActivity",
+		"navigationTabCount": "5",
+		"weblink": "https://www.sciencechannel.com/activate"
+	},
+
+"gulfport": {
+		"appPackage": "com.amazon.rialto.webapp.A50bec7ec83b4e3353b20de3c9e9460c2d31d98ec",
+		"appActivity": "com.amazon.rialto.webapp.A50bec7ec83b4e3353b20de3c9e9460c2d31d98ec.MainActivity",
+		"navigationTabCount": "5",
+		"weblink": "NA"
+	},
+
+	"sample": {
+		"appPackage": "samePack- Add your app above",
+		"appActivity": "sampleActivity",
+		"navigationTabCount": "5",
+		"weblink": "Do not add your app below this"
+	}
+}
+ 
+ 

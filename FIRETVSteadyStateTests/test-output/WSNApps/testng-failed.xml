@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [WSNApps]" parallel="tests">
+  <listeners>
+    <listener class-name="com.amazon.report.CustomReporter"/>
+  </listeners>
+  <test thread-count="1" name="FNN(failed)" parallel="tests">
+    <parameter name="searchText" value="Cars"/>
+    <parameter name="appName" value="fnn"/>
+    <parameter name="ASIN" value="B07V1H11KZ"/>
+    <groups>
+      <run>
+        <include name="ille"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="us.WSNTests">
+        <methods>
+          <include name="logoutAndExitVerification"/>
+          <include name="testSetUp"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- us.WSNTests -->
+    </classes>
+  </test> <!-- FNN(failed) -->
+</suite> <!-- Failed suite [WSNApps] -->

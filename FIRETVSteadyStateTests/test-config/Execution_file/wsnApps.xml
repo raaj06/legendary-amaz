@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="WSNApps" parallel="tests" thread-count="1">
+<listeners>
+       <listener class-name = "com.amazon.report.CustomReporter" />
+       </listeners>
+       
+       <test verbose="10" name="OBTV" preserve-order="true"
+	annotations="JDK">
+		<parameter name="appName" value="obtv" />
+		<parameter name="searchText" value="INVISIBLE KILLERS"/>
+		<parameter name="ASIN" value="B07JH1PYXR" />
+		<groups>
+			<run>
+				<include name="ille" /> <!-- Note: Choose 'sanity' to perform full script execution or 'ille' to 
+					perform ILLE tests only -->
+			</run>
+		</groups>
+		<classes>
+			<class name="us.WSNTests"/>
+			
+		</classes>
+	</test>
+	<test verbose="10" name="FNN" preserve-order="true"
+	annotations="JDK">
+		<parameter name="appName" value="fnn" />
+		<parameter name="searchText" value="Cars" />
+		<parameter name="ASIN" value="B07V1H11KZ" />
+		<groups>
+			<run>
+				<include name="ille" /> <!-- Note: Choose 'sanity' to perform full script execution or 'ille' to 
+					perform ILLE tests only -->
+			</run>
+		</groups>
+		<classes>
+			<class name="us.WSNTests"/>
+			
+		</classes>
+	</test>
+	
+	
+</suite>
+

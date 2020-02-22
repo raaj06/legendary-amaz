@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="GulfPort" parallel="tests" thread-count="1">
+<listeners>
+       <listener class-name = "com.amazon.report.CustomReporter" />
+       </listeners>
+       
+       <test verbose="10" name="GulfPort" preserve-order="true"
+	annotations="JDK">
+		<parameter name="appName" value="gulfport" />
+		<parameter name="searchText" value="Football"/>
+		<parameter name="ASIN" value="B07JNNJVWJ" />
+		<groups>
+			<run>
+				<include name="ille" /> <!-- Note: Choose 'sanity' to perform full script execution or 'ille' to 
+					perform ILLE tests only -->
+			</run>
+		</groups>
+		<classes>
+			<class name="us.GulfPortTests"/>
+			
+		</classes>
+	</test>
+	
+	</suite>
